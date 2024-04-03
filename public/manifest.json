@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "T2Extension",
+  "version": "1.0.0",
+  "description": "Automatic, fast login to Tokyo Tech (Titech) Potal",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://portal.titech.ac.jp/",
+        "https://portal.titech.ac.jp/portal-e.pl",
+        "https://portal.titech.ac.jp/portal.pl"
+      ],
+      "js": [
+        "js/redirect.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://portal.nap.gsic.titech.ac.jp/*"
+      ],
+      "js": [
+        "js/authenticate.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.titech.ac.jp/*"
+  ]
+}
