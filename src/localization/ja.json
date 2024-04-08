@@ -7,8 +7,7 @@
     "ERROR_ACCOUNT_NOT_SET": "アカウントが設定されていません",
     "ERROR_MATRIX_NOT_SET": "マトリクスが設定されていません",
     "ERROR_LOAD_FAILURE": "アカウントの読み込みに失敗しました",
-    "ERROR_INVALID_ACCOUNT": "アカウントが正しくありません",
-    "ERROR_INVALID_MATRIX": "マトリクスが正しくありません",
+    "ERROR_MATRIX_UNAVAILABLE": "マトリクス認証が利用できません",
     "ERROR_INVALID_STATUS_CODE": "不正なステータスコードです",
     "ERROR_AUTHENTICATE_FAILURE": "認証に失敗しました"
   },

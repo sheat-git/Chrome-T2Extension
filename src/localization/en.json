@@ -7,8 +7,7 @@
     "ERROR_ACCOUNT_NOT_SET": "Account is not set",
     "ERROR_MATRIX_NOT_SET": "Matrix is not set",
     "ERROR_LOAD_FAILURE": "Failed to load account",
-    "ERROR_INVALID_ACCOUNT": "Account is invalid",
-    "ERROR_INVALID_MATRIX": "Matrix is invalid",
+    "ERROR_MATRIX_UNAVAILABLE": "Matrix authentication is unavailable",
     "ERROR_INVALID_STATUS_CODE": "Status code is invalid",
     "ERROR_AUTHENTICATE_FAILURE": "Failed to authenticate"
   },
