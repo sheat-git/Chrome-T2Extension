@@ -9,6 +9,7 @@ const config: Configuration = {
     authenticate: './src/authenticate.tsx',
     redirect: './src/redirect.ts',
     background: './src/background.ts',
+    login_vpn: './src/login_vpn.ts',
   },
   output: {
     path: `${__dirname}/dist`,

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "T2Extension",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Automatic, fast login to Tokyo Tech (Titech) Potal",
   "icons": {
     "16": "icons/16.png",
@@ -30,6 +30,15 @@
       ],
       "js": [
         "js/authenticate.js"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "https://rp.nap.gsic.titech.ac.jp/vpnaccess_apm/service/"
+      ],
+      "js": [
+        "js/login_vpn.js"
       ],
       "run_at": "document_end"
     }
