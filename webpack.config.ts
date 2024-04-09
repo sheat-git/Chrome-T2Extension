@@ -41,6 +41,7 @@ const config: Configuration = {
       chunks: ['options'],
       title: 'T2Extension Settings',
       filename: 'options.html',
+      scriptLoading: 'blocking',
     }),
   ],
   devtool: process.env.NODE_ENV === 'production' ? false : 'cheap-source-map',

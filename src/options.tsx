@@ -154,13 +154,11 @@ const App = () => {
                   toast({
                     title: t('IMPORTED'),
                     status: 'success',
-                    isClosable: true,
                   })
                 } else {
                   toast({
                     title: t('INVALID_VALUE'),
                     status: 'error',
-                    isClosable: true,
                   })
                 }
               })
@@ -168,7 +166,6 @@ const App = () => {
                 toast({
                   title: t('UNKNOWN_ERROR'),
                   status: 'error',
-                  isClosable: true,
                 }),
               )
           }
@@ -185,14 +182,12 @@ const App = () => {
                 toast({
                   title: t('COPIED'),
                   status: 'success',
-                  isClosable: true,
                 }),
               )
               .catch(() =>
                 toast({
                   title: t('UNKNOWN_ERROR'),
                   status: 'error',
-                  isClosable: true,
                 }),
               )
           }
@@ -265,21 +260,18 @@ const App = () => {
                 toast({
                   title: t('SAVED'),
                   status: 'success',
-                  isClosable: true,
                 }),
               )
               .catch(() =>
                 toast({
                   title: t('UNKNOWN_ERROR'),
                   status: 'error',
-                  isClosable: true,
                 }),
               )
           } else {
             toast({
               title: t('INVALID_VALUE'),
               status: 'error',
-              isClosable: true,
             })
           }
         }}

@@ -35,7 +35,11 @@ export const render = (
   const container =
     appWrapper ?? document.body.appendChild(document.createElement('div'))
   createRoot(container).render(
-    <ChakraProvider theme={theme} resetCSS={true}>
+    <ChakraProvider
+      theme={theme}
+      resetCSS={true}
+      toastOptions={{ defaultOptions: { position: 'top', isClosable: true } }}
+    >
       <App node={node} colorMode={colorMode} />
     </ChakraProvider>,
   )
