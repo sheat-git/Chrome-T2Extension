@@ -74,7 +74,7 @@ const reducer: Reducer<State, Action> = (state: State, action: Action) => {
         showOpenOptions: action.error !== 'MATRIX_UNAVAILABLE',
       }
     case 'OPEN_OPTIONS':
-      sendMessage({ function: 'openOptionsPage' })
+      sendMessage({ function: 'OPEN_OPTIONS_PAGE' })
       return state
   }
 }

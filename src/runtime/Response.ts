@@ -1,6 +1,12 @@
-export type Response =
+import { Message } from './Message'
+
+type DataMapping = {
+  OPEN_OPTIONS_PAGE: undefined
+}
+
+export type Response<M extends Message> =
   | {
-      data: any
+      data: DataMapping[M['function']]
       error: null
     }
   | {

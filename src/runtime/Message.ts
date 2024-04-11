@@ -1,10 +1,9 @@
 import { Response } from './Response'
 
-export interface Message {
-  function: string
-  argument?: any
+export type Message = {
+  function: 'OPEN_OPTIONS_PAGE'
 }
 
-export const sendMessage = async (message: Message): Promise<Response> => {
-  return await chrome.runtime.sendMessage(message)
-}
+export const sendMessage = async <M extends Message>(
+  message: M,
+): Promise<Response<M>> => chrome.runtime.sendMessage(message)
